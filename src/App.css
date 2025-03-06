@@ -53,10 +53,10 @@ a:hover {
   text-decoration: none;
 }
 
-img {
+/* img {
   width: 100%;
   height: auto;
-}
+} */
 
 button {
   border: 0;
@@ -282,8 +282,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  animation: updown 3s linear infinite;
+.custom-image {
+  width: 300px !important;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: auto;
+  border-radius: 20px;
+}
+
+
+
+/* Center the image and info */
+.image-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+}
+
+/* Style the info container */
+.info-container {
+  margin-top: 20px; /* Add space between the image and text */
+  padding: 20px; /* Add padding inside the container */
+  border-top: 2px solid #444; /* Add a border line above the text */
+  width: 100%; /* Make the container full width */
+  max-width: 300px; /* Limit the width for better readability */
+}
+
+.info-container h3 {
+  font-size: 24px; /* Adjust font size for the name */
+  font-weight: bold; /* Make the name bold */
+  margin-bottom: 10px; /* Add space below the name */
+}
+
+.info-container p {
+  font-size: 16px; /* Adjust font size for email and location */
+  color: #B8B8B8; /* Use a lighter color for the text */
+  margin: 5px 0; /* Add spacing between paragraphs */
 }
 @keyframes updown {
     0% {
