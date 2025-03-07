@@ -66,11 +66,12 @@ export const Banner = () => {
           <div className="image-container">
             <img className="custom-image" src={headerImg} alt="Header Img" />
             <div className="info-container">
-              <h3>Ravindu</h3>
+              <h3>Ravindu Tharanga Perera</h3>
               <p>rkankan@clemson.edu</p>
               <p>Living in Clemson, SC, USA</p>
           </div>
           </div>
+          
           
         </Col>
         </Row>

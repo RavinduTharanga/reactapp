@@ -89,6 +89,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -97,13 +98,18 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
     width: 9%;
 }
+/* navbar text  */
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color:black !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+}
+/* Scrolled navbar link styles */
+nav.navbar.scrolled .navbar-nav .nav-link.navbar-link {
+  color: white !important; /* Text color when scrolled */
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
@@ -120,7 +126,7 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -152,8 +158,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #000000;
+  border: 1px solid ghostwhite;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -161,6 +167,12 @@ span.navbar-text {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
+/* navbar scrooled button text white */
+nav.navbar.scrolled .navbar-text button {
+  color: white !important; /* Text color when scrolled */
+  border-color: white; /* Optional: Change border color to white */
+}
+
 .navbar-text button span {
   z-index: 1;
 }
@@ -234,7 +246,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner.jpg');
+  /* background-image: url('./assets/img/banner.jpg'); */
+  background: ghostwhite;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -256,16 +269,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: #444;
 }
 .banner p {
-  color: #B8B8B8;
+  color: gray;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: #0a0a0a;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -314,11 +328,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 24px; /* Adjust font size for the name */
   font-weight: bold; /* Make the name bold */
   margin-bottom: 10px; /* Add space below the name */
+  color: gray;
 }
 
 .info-container p {
   font-size: 16px; /* Adjust font size for email and location */
-  color: #B8B8B8; /* Use a lighter color for the text */
+  color: gray; /* Use a lighter color for the text */
   margin: 5px 0; /* Add spacing between paragraphs */
 }
 @keyframes updown {
@@ -340,6 +355,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background: ghostwhite;
 }
 .skill-bx {
   background: #151515;
@@ -380,15 +396,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: ghostwhite;
 }
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
+  color: gray;
 }
 .project p {
-  color: #B8B8B8;
+  color: gray;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -452,7 +469,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx {
   position: relative;
   border-radius: 20px;
-  overflow: hidden;
+  /* overflow:hidden ; */
   /* margin-bottom: 24px; */
 }
 .proj-imgbx::before {
@@ -461,7 +478,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0.85;
   position: absolute;
   width: 100%;
-  height: 0;
+  height: 10%;
   transition: 0.4s ease-in-out;
 }
 .proj-imgbx:hover::before {
@@ -476,7 +493,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -694,5 +711,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   width: 100%;
   height: 10%;
+  border-color: white;
 
-}
+
+} 
