@@ -98,7 +98,7 @@
 // }
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+import projImg1 from "../assets/img/laptop.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -108,7 +108,7 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const machineLearningProjects = [
-    { title: "ML Project 1", description: "Deep Learning Model", imgUrl: projImg1 },
+    { title: "Laptop Price Predictor", description: "Deep Learning Model", imgUrl: projImg1 },
     { title: "ML Project 2", description: "NLP Analysis", imgUrl: projImg2 },
     { title: "ML Project 3", description: "Computer Vision", imgUrl: projImg3 }
   ];
