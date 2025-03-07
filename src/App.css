@@ -686,3 +686,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: translateX(-50%); /* Move the track by half its width */
   }
 }
+
+/* project card */
+
+.card {
+
+  width: 100%;
+  height: 20%;
+
+}
