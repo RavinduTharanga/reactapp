@@ -62,9 +62,11 @@
 //     </section>
 //   )
 // }
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter1 from "../assets/img/python.png";
+import meter2 from "../assets/img/sql.webp";
+import meter3 from "../assets/img/js.png";
+import meter4 from "../assets/img/c++.png";
+
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
@@ -87,11 +89,11 @@ export const Skills = () => {
                     <h5>SQL</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter3} alt="C++" />
+                    <img src={meter4} alt="C++" />
                     <h5>C++</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter1} alt="JavaScript" />
+                    <img src={meter3} alt="JavaScript" />
                     <h5>JavaScript</h5>
                   </div>
 
@@ -105,11 +107,11 @@ export const Skills = () => {
                     <h5>SQL</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter3} alt="C++" />
+                    <img src={meter4} alt="C++" />
                     <h5>C++</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter1} alt="JavaScript" />
+                    <img src={meter3} alt="JavaScript" />
                     <h5>JavaScript</h5>
                   </div>
                 </div>
