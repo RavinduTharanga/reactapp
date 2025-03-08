@@ -415,7 +415,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
-  color: gray;
+  color: rgb(57, 57, 57);
 }
 .project p {
   color: gray;
@@ -428,8 +428,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .project h3{
 
-  color: black;
+  color: rgb(48, 48, 48);
   margin: 20px;
+  font-style:inherit;
 
 }
 .project .nav.nav-pills {

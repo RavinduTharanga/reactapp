@@ -68,6 +68,7 @@ export const Banner = () => {
             <div className="info-container">
               <h3>Ravindu Tharanga Perera</h3>
               <p>rkankan@clemson.edu</p>
+              <p>+1(864)-765-7403</p>
               <p>Living in Clemson, SC, USA</p>
           </div>
           </div>

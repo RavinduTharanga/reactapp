@@ -269,7 +269,7 @@ export const Projects = () => {
   const dataEngineeringProjects = [
     { title: "Data Eng Project 1", description: "ETL Pipeline", imgUrl: projImg1 },
     { title: "Data Eng Project 2", description: "Data Warehousing", imgUrl: projImg2 },
-    { title: "Data Eng Project 3", description: "Big Data Processing", imgUrl: projImg3 }
+
   ];
 
   const dataAnalyticsProjects = [
