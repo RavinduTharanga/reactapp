@@ -393,10 +393,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+
+
+/* Add this to your global CSS file */
+.project .row {
+  margin: 0 auto; /* Center the row */
+  max-width: 1200px; /* Limit the maximum width */
+}
+
+.project .col-md-4 {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+}
 .project {
   padding: 80px 0;
   position: relative;
   background-color: ghostwhite;
+  
 }
 .project h2 {
 	font-size: 45px;
@@ -412,6 +425,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+}
+.project h3{
+
+  color: black;
+  margin: 20px;
+
 }
 .project .nav.nav-pills {
   width: 72%;
