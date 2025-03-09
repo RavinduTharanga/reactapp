@@ -256,7 +256,10 @@ import projImg1 from "../assets/img/laptop.png";
 import projImg2 from "../assets/img/snowflake.png";
 import projImg22 from "../assets/img/visualization.png";
 
-import projImg3 from "../assets/img/laptop.png";
+import projImg3 from "../assets/img/chatgpt.png";
+import projImg32 from "../assets/img/crypto.png";
+import projImg33 from "../assets/img/emergency.png";
+import projImg34 from "../assets/img/prime.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -290,23 +293,30 @@ export const Projects = () => {
 
   const dataAnalyticsProjects = [
     { 
-      title: "Data Analytics Project 1", 
-      description: "Dashboard Creation", 
-      imgUrl: projImg1, 
-      githubUrl: "https://github.com/yourusername/data-analytics-project1" 
-    },
-    { 
-      title: "Data Analytics Project 2", 
-      description: "Predictive Analytics", 
-      imgUrl: projImg2, 
-      githubUrl: "https://github.com/yourusername/data-analytics-project2" 
-    },
-    { 
-      title: "Data Analytics Project 3", 
-      description: "Business Intelligence", 
+      title: "ChatGPT's Rapid Growth Among Users", 
+      description: "This project focuses on analyzing the growth of users on ChatGPT, a language model developed by OpenAI, using Power BI. The data for this analysis was obtained by scraping the relevant information from the website https://explodingtopics.com/blog/chatgpt-users. The collected data was then cleaned and visualized to derive meaningful insights.", 
       imgUrl: projImg3, 
-      githubUrl: "https://github.com/yourusername/data-analytics-project3" 
-    }
+      githubUrl: "https://github.com/RavinduTharanga/ChatGPT-s-Rapid-Growth?tab=readme-ov-file" 
+    },
+    { 
+      title: "Cryptocurrency Dashboard Analysis", 
+      description: "This project focuses on providing a comprehensive analysis of cryptocurrency pricing and overall market trends through an interactive dashboard. The dashboard utilizes data from various popular cryptocurrencies such as BTC, BNB, ETH, LINK, XEM, XRP, and more. By visualizing key metrics and trends, this dashboard aims to offer valuable insights into the cryptocurrency market's behavior over time.", 
+      imgUrl: projImg32, 
+      githubUrl: "https://github.com/RavinduTharanga/Crypto-currency" 
+    },
+    { 
+      title: "Tableau Dashboard: Emergency Room Analysis", 
+      description: "Welcome to the Emergency Room Analysis Tableau Dashboard! This dynamic dashboard offers a comprehensive exploration of vital insights extracted from emergency room data. From patient demographics to department referrals, this visualization serves as a valuable tool for understanding the patterns and trends within emergency room visits.", 
+      imgUrl: projImg33, 
+      githubUrl: "https://github.com/RavinduTharanga/Emergency_Dashboard" 
+    },
+      { 
+        title: "Prime Tv Analysis", 
+        description: "This project is based on prime tv analysis base on prime data and Insightfull visulize using Power BI", 
+        imgUrl: projImg34, 
+        githubUrl: "https://github.com/RavinduTharanga/Power-BI-Project" 
+      }
+    
   ];
 
   return (
@@ -321,7 +331,7 @@ export const Projects = () => {
                   <p>Explore projects across Machine Learning, Data Engineering, and Data Analytics.</p>
 
                   {/* Machine Learning Projects */}
-                  <h3>Machine Learning</h3>
+                  <h3>AI & Machine Learning</h3>
                   <Row className="justify-content-center">
                     {machineLearningProjects.map((project, index) => (
                       <Col md={4} key={index}>
