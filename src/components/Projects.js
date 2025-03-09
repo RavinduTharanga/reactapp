@@ -263,21 +263,50 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
   const machineLearningProjects = [
-    { title: "Laptop Price Predictor", description: "Laptop price predictor is a Machine learning based application build on flask server", imgUrl: projImg1 },
-    // { title: "ML Project 2", description: "NLP Analysis", imgUrl: projImg2 },
-    // { title: "ML Project 3", description: "Computer Vision", imgUrl: projImg3 }
+    { 
+      title: "Laptop Price Predictor", 
+      description: "Laptop price predictor is a Machine learning based application build on flask server", 
+      imgUrl: projImg1, 
+      githubUrl: "https://github.com/RavinduTharanga/LaptopPricePredictor/tree/main/LaptopPricePredictor-master" 
+    },
+    // Add more projects as needed
   ];
 
   const dataEngineeringProjects = [
-    { title: "Real Estate Data Analytics - ETL Data Engineering Project", description: "This project demonstrates an end-to-end ETL (Extract, Transform, Load) data engineering pipeline for Redfin real estate data. The pipeline utilizes Apache Airflow, AWS (S3, EC2), Snowflake, Snowpipe, and Power BI to extract, transform, and visualize real estate insights.", imgUrl: projImg2 },
-    { title: "ETL and Visualization of Reddit Data Using Power BI", description: "This project provides an end-to-end data pipeline for extracting, transforming, and loading (ETL) Reddit data into an Amazon Redshift data warehouse and visulize data using PowerBI. By leveraging Apache Airflow, Celery, PostgreSQL, Docker, Amazon S3, AWS Glue, Amazon Athena, and Amazon Redshift, this pipeline ensures efficient data processing and analytics.", imgUrl: projImg22 },
-
+    { 
+      title: "Real Estate Data Analytics - ETL Data Engineering Project", 
+      description: "This project demonstrates an end-to-end ETL (Extract, Transform, Load) data engineering pipeline for Redfin real estate data.", 
+      imgUrl: projImg2, 
+      githubUrl: "https://github.com/RavinduTharanga/Data_Engineering_Project1" 
+    },
+    { 
+      title: "ETL and Visualization of Reddit Data Using Power BI", 
+      description: "This project provides an end-to-end data pipeline for extracting, transforming, and loading (ETL) Reddit data.", 
+      imgUrl: projImg22, 
+      githubUrl: "https://github.com/RavinduTharanga/DataEngineeringProject2" 
+    },
+    // Add more projects as needed
   ];
 
   const dataAnalyticsProjects = [
-    { title: "Data Analytics Project 1", description: "Dashboard Creation", imgUrl: projImg1 },
-    { title: "Data Analytics Project 2", description: "Predictive Analytics", imgUrl: projImg2 },
-    { title: "Data Analytics Project 3", description: "Business Intelligence", imgUrl: projImg3 }
+    { 
+      title: "Data Analytics Project 1", 
+      description: "Dashboard Creation", 
+      imgUrl: projImg1, 
+      githubUrl: "https://github.com/yourusername/data-analytics-project1" 
+    },
+    { 
+      title: "Data Analytics Project 2", 
+      description: "Predictive Analytics", 
+      imgUrl: projImg2, 
+      githubUrl: "https://github.com/yourusername/data-analytics-project2" 
+    },
+    { 
+      title: "Data Analytics Project 3", 
+      description: "Business Intelligence", 
+      imgUrl: projImg3, 
+      githubUrl: "https://github.com/yourusername/data-analytics-project3" 
+    }
   ];
 
   return (
@@ -296,7 +325,12 @@ export const Projects = () => {
                   <Row className="justify-content-center">
                     {machineLearningProjects.map((project, index) => (
                       <Col md={4} key={index}>
-                        <ProjectCard {...project} />
+                        <ProjectCard 
+                          title={project.title} 
+                          description={project.description} 
+                          imgUrl={project.imgUrl} 
+                          githubUrl={project.githubUrl} 
+                        />
                       </Col>
                     ))}
                   </Row>
@@ -306,7 +340,12 @@ export const Projects = () => {
                   <Row className="justify-content-center">
                     {dataEngineeringProjects.map((project, index) => (
                       <Col md={4} key={index}>
-                        <ProjectCard {...project} />
+                        <ProjectCard 
+                          title={project.title} 
+                          description={project.description} 
+                          imgUrl={project.imgUrl} 
+                          githubUrl={project.githubUrl} 
+                        />
                       </Col>
                     ))}
                   </Row>
@@ -316,7 +355,12 @@ export const Projects = () => {
                   <Row className="justify-content-center">
                     {dataAnalyticsProjects.map((project, index) => (
                       <Col md={4} key={index}>
-                        <ProjectCard {...project} />
+                        <ProjectCard 
+                          title={project.title} 
+                          description={project.description} 
+                          imgUrl={project.imgUrl} 
+                          githubUrl={project.githubUrl} 
+                        />
                       </Col>
                     ))}
                   </Row>
