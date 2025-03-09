@@ -24,7 +24,7 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         <CCardTitle>{title}</CCardTitle>
         <CCardText>{description}</CCardText>
         <CButton color="primary" href="#">
-          Learn More
+          Github
         </CButton>
       </CCardBody>
     </CCard>

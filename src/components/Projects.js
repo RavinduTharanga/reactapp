@@ -253,7 +253,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard"; // Import the updated ProjectCard
 import projImg1 from "../assets/img/laptop.png";
-import projImg2 from "../assets/img/laptop.png";
+import projImg2 from "../assets/img/snowflake.png";
+import projImg22 from "../assets/img/visualization.png";
+
 import projImg3 from "../assets/img/laptop.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -261,14 +263,14 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
   const machineLearningProjects = [
-    { title: "Laptop Price Predictor", description: "Deep Learning Model", imgUrl: projImg1 },
-    { title: "ML Project 2", description: "NLP Analysis", imgUrl: projImg2 },
-    { title: "ML Project 3", description: "Computer Vision", imgUrl: projImg3 }
+    { title: "Laptop Price Predictor", description: "Laptop price predictor is a Machine learning based application build on flask server", imgUrl: projImg1 },
+    // { title: "ML Project 2", description: "NLP Analysis", imgUrl: projImg2 },
+    // { title: "ML Project 3", description: "Computer Vision", imgUrl: projImg3 }
   ];
 
   const dataEngineeringProjects = [
-    { title: "Data Eng Project 1", description: "ETL Pipeline", imgUrl: projImg1 },
-    { title: "Data Eng Project 2", description: "Data Warehousing", imgUrl: projImg2 },
+    { title: "Real Estate Data Analytics - ETL Data Engineering Project", description: "This project demonstrates an end-to-end ETL (Extract, Transform, Load) data engineering pipeline for Redfin real estate data. The pipeline utilizes Apache Airflow, AWS (S3, EC2), Snowflake, Snowpipe, and Power BI to extract, transform, and visualize real estate insights.", imgUrl: projImg2 },
+    { title: "ETL and Visualization of Reddit Data Using Power BI", description: "This project provides an end-to-end data pipeline for extracting, transforming, and loading (ETL) Reddit data into an Amazon Redshift data warehouse and visulize data using PowerBI. By leveraging Apache Airflow, Celery, PostgreSQL, Docker, Amazon S3, AWS Glue, Amazon Athena, and Amazon Redshift, this pipeline ensures efficient data processing and analytics.", imgUrl: projImg22 },
 
   ];
 
