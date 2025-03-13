@@ -31,8 +31,27 @@
 //   );
 // };
 
+// import React from 'react';
+// import { CCard, CCardBody, CCardImage, CCardTitle, CCardText, CButton } from '@coreui/react';
+
+// export const ProjectCard = ({ title, description, imgUrl, githubUrl }) => {
+//   return (
+//     <CCard style={{ width: '100%', marginBottom: '20px' }}>
+//       <CCardImage orientation="top" src={imgUrl} />
+//       <CCardBody>
+//         <CCardTitle>{title}</CCardTitle>
+//         <CCardText>{description}</CCardText>
+//         <CButton color="primary" href={githubUrl} target="_blank" rel="noopener noreferrer">
+//           Github
+//         </CButton>
+//       </CCardBody>
+//     </CCard>
+//   );
+// };
+
 import React from 'react';
 import { CCard, CCardBody, CCardImage, CCardTitle, CCardText, CButton } from '@coreui/react';
+import { FaGithub } from 'react-icons/fa'; // Import the GitHub icon from react-icons
 
 export const ProjectCard = ({ title, description, imgUrl, githubUrl }) => {
   return (
@@ -40,9 +59,30 @@ export const ProjectCard = ({ title, description, imgUrl, githubUrl }) => {
       <CCardImage orientation="top" src={imgUrl} />
       <CCardBody>
         <CCardTitle>{title}</CCardTitle>
-        <CCardText>{description}</CCardText>
-        <CButton color="primary" href={githubUrl} target="_blank" rel="noopener noreferrer">
-          Github
+        {/* <CCardText>{description}</CCardText> */}
+        <CButton 
+          color="" 
+          href={githubUrl} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{
+            border: '2px solid #000', // Add a border
+            backgroundColor: 'transparent', // Transparent background
+            color: '#000', // Text color
+            alignItems: 'center', // Center items vertically
+            gap: '8px', // Space between icon and text
+            transition: 'background-color 0.3s ease, color 0.3s ease', // Smooth transition
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = '#c0c0c0'; // Silver background on hover
+            e.target.style.color = '#000'; // Text color on hover
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = 'transparent'; // Reset background
+            e.target.style.color = '#000'; // Reset text color
+          }}
+        >
+          <FaGithub /> View on GitHub
         </CButton>
       </CCardBody>
     </CCard>

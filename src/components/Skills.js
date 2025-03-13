@@ -66,6 +66,8 @@ import meter1 from "../assets/img/python.png";
 import meter2 from "../assets/img/sql.webp";
 import meter3 from "../assets/img/js.png";
 import meter4 from "../assets/img/c++.png";
+import meter5 from "../assets/img/react.png";
+import meter6 from "../assets/img/nodejs.png";
 
 import colorSharp from "../assets/img/color-sharp.png";
 
@@ -81,38 +83,54 @@ export const Skills = () => {
                 <div className="slide-track">
                   {/* First Set of Skills */}
                   <div className="slide">
-                    <img src={meter1} alt="Python" />
+                    <img className="skillimg" src={meter1} alt="Python" />
                     <h5>Python</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter2} alt="SQL" />
+                    <img className="skillimg" src={meter2} alt="SQL" />
                     <h5>SQL</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter4} alt="C++" />
+                    <img className="skillimg" src={meter4} alt="C++" />
                     <h5>C++</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter3} alt="JavaScript" />
+                    <img className="skillimg" src={meter3} alt="JavaScript" />
                     <h5>JavaScript</h5>
+                  </div>
+                  <div className="slide">
+                    <img className="skillimg" src={meter5} alt="React" />
+                    <h5>React</h5>
+                  </div>
+                  <div className="slide">
+                    <img className="skillimg" src={meter6} alt="Node" />
+                    <h5>Node.js</h5>
                   </div>
 
                   {/* Duplicate Set of Skills for Infinite Loop */}
                   <div className="slide">
-                    <img src={meter1} alt="Python" />
+                    <img className="skillimg" src={meter1} alt="Python" />
                     <h5>Python</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter2} alt="SQL" />
+                    <img className="skillimg" src={meter2} alt="SQL" />
                     <h5>SQL</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter4} alt="C++" />
+                    <img className="skillimg" src={meter4} alt="C++" />
                     <h5>C++</h5>
                   </div>
                   <div className="slide">
-                    <img src={meter3} alt="JavaScript" />
+                    <img className="skillimg" src={meter3} alt="JavaScript" />
                     <h5>JavaScript</h5>
+                  </div>
+                  <div className="slide">
+                    <img className="skillimg" src={meter5} alt="React" />
+                    <h5>React</h5>
+                  </div>
+                  <div className="slide">
+                    <img className="skillimg" src={meter6} alt="Node" />
+                    <h5>Node.js</h5>
                   </div>
                 </div>
               </div>

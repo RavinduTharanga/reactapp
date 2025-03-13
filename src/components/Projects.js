@@ -328,7 +328,7 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div>
                   <h2>Projects</h2>
-                  <p>Explore projects across Machine Learning, Data Engineering, and Data Analytics.</p>
+                  {/* <p>Explore projects across Machine Learning, Data Engineering, and Data Analytics.</p> */}
 
                   {/* Machine Learning Projects */}
                   <h3>AI & Machine Learning</h3>
@@ -380,7 +380,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="background" />
+      {/* <img className="background-image-right" src={colorSharp2} alt="background" /> */}
     </section>
   );
 };

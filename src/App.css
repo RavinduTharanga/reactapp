@@ -126,9 +126,9 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(0, 0, 0, 0.1);
+    background: dodgerblue;
     display: inline-flex;
-    border-radius: 50%;
+    border-radius: 30%;
     margin-right: 6px;
     align-items: center;
     justify-content: center;
@@ -141,7 +141,7 @@ span.navbar-text {
     height: 42px;
     position: absolute;
     background-color: #ffffff;
-    border-radius: 50%;
+    border-radius: 30%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
 }
@@ -352,17 +352,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
+.skillimg{
+  height: 100px;
+}
+
+
 .skill {
-  padding: 0 0 50px 0;
+  /* padding: 0 0 50px 0; */
   position: relative;
   background: ghostwhite;
 }
 .skill-bx {
-  background: #151515;
+  /* background: #151515; */
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  color: #444;
 }
 .skill h2 {
 	font-size: 45px;
@@ -391,6 +397,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+/************ Resume Css ************/
+
+.resume {
+  /* padding: 80px 0; */
+  position: relative;
+  background-color: ghostwhite;
+  color: #444;
+}
+.resume h2{
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(57, 57, 57);
+}
 
 /************ Projects Css ************/
 
@@ -399,14 +419,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .row {
   margin: 0 auto; /* Center the row */
   max-width: 1200px; /* Limit the maximum width */
+  
 }
 
 .project .col-md-4 {
   display: flex;
-  justify-content: center; /* Center the cards horizontally */
+  justify-content: left !important; /* Center the cards horizontally */
 }
 .project {
-  padding: 80px 0;
+  /* padding: 80px 0; */
   position: relative;
   background-color: ghostwhite;
   
