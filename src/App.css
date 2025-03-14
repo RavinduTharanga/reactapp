@@ -319,7 +319,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .info-container {
   margin-top: 20px; /* Add space between the image and text */
   padding: 20px; /* Add padding inside the container */
-  border-top: 2px solid #444; /* Add a border line above the text */
+ 
   width: 100%; /* Make the container full width */
   max-width: 300px; /* Limit the width for better readability */
 }
@@ -397,6 +397,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+
+.skills-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 12); /* Adjust based on the number of slides and their width */
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  width: 250px; /* Adjust based on your slide width */
+  flex-shrink: 0;
+}
+
+
 /************ Resume Css ************/
 
 .resume {
