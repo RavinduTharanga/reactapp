@@ -419,6 +419,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .row {
   margin: 0 auto; /* Center the row */
   max-width: 1200px; /* Limit the maximum width */
+  justify-content: left !important;
   
 }
 
