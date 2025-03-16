@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { FaGithub } from 'react-icons/fa'; // Import the GitHub icon from react-icons
+
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
@@ -46,7 +48,7 @@ export const NavBar = () => {
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#resume" className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}>Resume</Nav.Link>
+              {/* <Nav.Link href="#resume" className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume')}>Resume</Nav.Link> */}
               <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
               <Nav.Link href="https://scholar.google.com/citations?user=ygzgv78AAAAJ&hl=en" className={activeLink === 'publications' ? 'active navbar-link' : 'navbar-link'}onClick={() => onUpdateActiveLink('publications')}
 >
@@ -57,6 +59,11 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/ravindu-tharanga-perera"><img src={navIcon1} alt="" /></a>
              
+              </div>
+              <div className="social-icon-github">
+                <a href="https://github.com/RavinduTharanga" target="_blank" rel="noopener noreferrer">
+                  <FaGithub size={30} color="#000" />
+                </a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

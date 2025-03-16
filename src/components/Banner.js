@@ -9,10 +9,10 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(200 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Developer", "AI Engineer", "Data Enginner","Developer" ];
-  const period = 2000;
+  const toRotate = [ "Software Developer", "Web Developer", "Data Engineer","Data Analyst" ];
+  const period = 100;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -56,7 +56,9 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Ravindu`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Web Developer","Data Scientist","Ai Engineer","Data Engineer"]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Ravindu.`} 
+                  <p></p>
+                  <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Software Developer", "Web Developer","Data Analyst","Data Engineer"]'><span className="wrap">{text}</span></span></h1>
                   <p>I am currently pursuing a master's degree in Computer Science at Clemson University, where I am enhancing my knowledge and skills in data science and machine learning. I have published several working progress research papers at Human centered AI conferences. I am passionate about learning new technologies and research and applying them to real world scenarios.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}

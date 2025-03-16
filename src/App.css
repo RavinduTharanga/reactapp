@@ -129,12 +129,17 @@ span.navbar-text {
     background: dodgerblue;
     display: inline-flex;
     border-radius: 30%;
-    margin-right: 6px;
+    margin-right: 30px;
     align-items: center;
     justify-content: center;
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
+.social-icon-github{
+  background: white;
+  border-radius: 20px;
+}
+
 .social-icon a::before {
     content: "";
     width: 42px;
