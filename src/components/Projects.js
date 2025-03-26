@@ -251,7 +251,16 @@
 
 
 import { Container, Row, Col } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard"; // Import the updated ProjectCard
+import { ProjectCard } from "./ProjectCard"; 
+import { ProjectCard2 } from "./ProjectCard"; 
+// Import the updated ProjectCard
+import projImga from "../assets/img/1.png";
+import projImgb from "../assets/img/2.png";
+import projImgc from "../assets/img/3.png";
+import projImgd from "../assets/img/4.png";
+import projImge from "../assets/img/5.png";
+import projImgf from "../assets/img/6.png";
+
 import projImg1 from "../assets/img/laptop.png";
 import projImg2 from "../assets/img/snowflake.png";
 import projImg22 from "../assets/img/visualization.png";
@@ -265,13 +274,48 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
+
+  const webDevelopmentProjects = [
+    { 
+    
+      description: "Laptop price predictor is a Machine learning based application build on flask server", 
+      imgUrl:projImga, 
+      Url: "https://cargo-drive.com/#home" 
+    },
+    { 
+      description: "Laptop price predictor is a Machine learning based application build on flask server", 
+      imgUrl: projImgb, 
+      Url: "https://sunrufabrications.com/" 
+    },
+    { 
+      description: "Laptop price predictor is a Machine learning based application build on flask server", 
+      imgUrl: projImgc, 
+      Url: "http://globaltrading.lk/" 
+    },
+    { 
+      description: "Laptop price predictor is a Machine learning based application build on flask server", 
+      imgUrl: projImgd, 
+      Url: "https://deviitor.com/" 
+    },
+    { 
+      description: "Laptop price predictor is a Machine learning based application build on flask server", 
+      imgUrl: projImge, 
+      Url: "https://haielab.org/index.html" 
+    },
+    { 
+      description: "Laptop price predictor is a Machine learning based application build on flask server", 
+      imgUrl: projImgf, 
+      Url: "https://www.hsl-courses.com/login/canvas" 
+    }
+    // Add more projects as needed
+  ];
   const machineLearningProjects = [
     { 
       title: "Laptop Price Predictor", 
       description: "Laptop price predictor is a Machine learning based application build on flask server", 
       imgUrl: projImg1, 
       githubUrl: "https://github.com/RavinduTharanga/LaptopPricePredictor/tree/main/LaptopPricePredictor-master" 
-    },
+    }
     // Add more projects as needed
   ];
 
@@ -287,7 +331,7 @@ export const Projects = () => {
       description: "This project provides an end-to-end data pipeline for extracting, transforming, and loading (ETL) Reddit data.", 
       imgUrl: projImg22, 
       githubUrl: "https://github.com/RavinduTharanga/DataEngineeringProject2" 
-    },
+    }
     // Add more projects as needed
   ];
 
@@ -329,6 +373,20 @@ export const Projects = () => {
                 <div>
                   <h2>Projects</h2>
                   {/* <p>Explore projects across Machine Learning, Data Engineering, and Data Analytics.</p> */}
+                  {/* Machine Learning Projects */}
+                  <h3>Web Development</h3>
+                  <Row className="justify-content-center">
+                    {webDevelopmentProjects.map((project, index) => (
+                      <Col md={4} key={index}>
+                        <ProjectCard2 
+                          title={project.title} 
+                          description={project.description} 
+                          imgUrl={project.imgUrl} 
+                          Url={project.Url} 
+                        />
+                      </Col>
+                    ))}
+                  </Row>
 
                   {/* Machine Learning Projects */}
                   <h3>AI & Machine Learning</h3>
